@@ -9,7 +9,7 @@ Learn how to manage state and create actions in Zustand stores.
 ```ts
 const useStore = create((set) => ({
   count: 0,
-  increment: () => set({ count: 1 }),
+  setCount: (value) => set({ count: value }),
 }))
 ```
 

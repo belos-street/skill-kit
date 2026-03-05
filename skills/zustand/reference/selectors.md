@@ -51,6 +51,8 @@ function UserCard() {
 }
 ```
 
+> ⚠️ **Note**: Object selectors create a new object on every render, which may cause unnecessary re-renders. Use [shallow equality](#shallow-equality) to optimize:
+
 ## Shallow Equality
 
 Use shallow equality for object selectors to avoid unnecessary re-renders:
@@ -112,23 +114,28 @@ function CompletedTodos() {
 Create reusable selector functions:
 
 ```ts
-const useStore = create((set) => ({
+interface User {
+  id: number
+  name: string
+}
+
+interface UserState {
+  users: User[]
+  addUser: (user: User) => void
+}
+
+const useUserStore = create<UserState>((set) => ({
   users: [],
-  products: [],
-  orders: [],
+  addUser: (user) => set((state) => ({ users: [...state.users, user] })),
 }))
 
-const selectById = <T extends { id: number }>(id: number) => (state: { items: T[] }) =>
-  state.items.find((item) => item.id === id)
-
-const selectUsers = (state) => state.users
-const selectProducts = (state) => state.products
-const selectOrders = (state) => state.orders
+const selectUserById = (id: number) => (state: UserState) =>
+  state.users.find((user) => user.id === id)
 ```
 
 ```tsx
 function UserDetail({ userId }: { userId: number }) {
-  const user = useStore((state) => state.users.find((u) => u.id === userId))
+  const user = useUserStore(selectUserById(userId))
   return <div>{user?.name}</div>
 }
 ```
@@ -138,9 +145,21 @@ function UserDetail({ userId }: { userId: number }) {
 Memoize expensive computations:
 
 ```ts
-import { createSelector } from 'reselect'
+import { createSelector } from 'zustand'
 
-const useStore = create((set) => ({
+interface Todo {
+  id: number
+  text: string
+  completed: boolean
+}
+
+interface TodoState {
+  todos: Todo[]
+  filter: 'all' | 'active' | 'completed'
+  setFilter: (filter: 'all' | 'active' | 'completed') => void
+}
+
+const useTodoStore = create<TodoState>((set) => ({
   todos: [],
   filter: 'all',
   setFilter: (filter) => set({ filter }),
@@ -158,7 +177,7 @@ const filteredTodosSelector = createSelector(
 
 ```tsx
 function TodoList() {
-  const filteredTodos = useStore(filteredTodosSelector)
+  const filteredTodos = useTodoStore(filteredTodosSelector)
   return <ul>{filteredTodos.map((todo) => <li key={todo.id}>{todo.text}</li>)}</ul>
 }
 ```
