@@ -50,18 +50,7 @@ Pinia state management for Vue 3 using Composition API style stores.
 - Shared state across stores → See [store-shared-state](reference/store-shared-state.md)
 - Extracting common store logic → See [store-logic-extraction](reference/store-logic-extraction.md)
 
-### SSR & Nuxt
-- Pinia state hydration in SSR → See [ssr-state-hydration](reference/ssr-state-hydration.md)
-- Avoiding state leakage between requests → See [ssr-state-isolation](reference/ssr-state-isolation.md)
-- Using Pinia with Nuxt → See [nuxt-pinia-integration](reference/nuxt-pinia-integration.md)
-
-### DevTools & Debugging
-- Using Vue DevTools with Pinia → See [devtools-integration](reference/devtools-integration.md)
-- Debugging state changes → See [debugging-state-changes](reference/debugging-state-changes.md)
-- Time-travel debugging with Pinia → See [time-travel-debugging](reference/time-travel-debugging.md)
-
 ### Best Practices
-- Avoiding prop drilling with stores → See [avoid-prop-drilling](reference/avoid-prop-drilling.md)
 - Store size and performance → See [store-performance-optimization](reference/store-performance-optimization.md)
 - When to use Pinia vs provide/inject → See [pinia-vs-provide-inject](reference/pinia-vs-provide-inject.md)
 - Testing Pinia stores → See [testing-pinia-stores](reference/testing-pinia-stores.md)
