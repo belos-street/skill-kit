@@ -38,6 +38,10 @@ bun test
 - **Web APIs**: Built-in fetch, WebSocket, and other web standards
 - **SQLite**: Built-in database support
 
+## CLI Tools
+
+- Build CLI tools with Bun → See [cli-tools](reference/cli-tools.md)
+
 ## Basic Usage
 
 ```ts
