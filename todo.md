@@ -12,7 +12,7 @@
   - 添加 `keywords`, `description`, `repository`, `homepage`, `bugs`, `author`, `license`
 - [ ] 创建 CLI 入口文件
   - `bin/skill-kit.js` - CLI 命令入口
-  - 添加 shebang (`#!/usr/bin/env node`)
+  - 添加 声明 (`#!/usr/bin/env bun`)
   - 实现基本的命令解析（init, list, generate 等）
 - [ ] 实现核心功能
   - `lib/cli.js` - CLI 交互逻辑

@@ -1,12 +1,46 @@
 {
   "name": "skill-kit",
-  "module": "index.ts",
+  "version": "1.0.0",
+  "description": "CLI tool for managing skill documentation - generate agents and skill directories",
   "type": "module",
-  "private": true,
+  "main": "./index.ts",
+  "bin": {
+    "skill-kit": "./lib/cli/index.ts"
+  },
+  "files": [
+    "lib/",
+    "skills/",
+    "index.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belos-street/skill-kit"
+  },
+  "keywords": [
+    "cli",
+    "skill",
+    "documentation",
+    "agents",
+    "ai"
+  ],
+  "author": "belos-street",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/belos-street/skill-kit/issues"
+  },
+  "homepage": "https://github.com/belos-street/skill-kit#readme",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/prompts": "^2.4.9"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "chalk": "4",
+    "commander": "^14.0.3",
+    "ora": "^9.3.0",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2"
   }
 }
