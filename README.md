@@ -143,37 +143,40 @@ nextjs
 
 | 技能 | 描述 | 参考文件数 |
 |--------|-------------|-----------------|
-| bun | Bun 运行时和工具链 | 6 |
-| nextjs | Next.js React 框架 | 8 |
-| pinia | Vue 状态管理 | 25 |
-| react | React 库 | 3 |
-| vue | Vue.js 核心 | 3 |
-| vue-best-practices | Vue 3 + TypeScript 最佳实践 | 100+ |
-| vue-router-best-practices | Vue Router 最佳实践 | 7 |
-| vue-testing-best-practices | Vue 测试最佳实践 | 5 |
-| zustand | Zustand 状态管理 | 5 |
-| unocss | UnoCSS 原子 CSS 引擎 | 3 |
-| react-best-practices | React 最佳实践 | 60+ |
-| belos-street | Belos Street 项目约定 | 4 |
+| [bun](skills/bun/skill.md) | Bun 运行时和工具链 | 6 |
+| [nextjs](skills/nextjs/skill.md) | Next.js React 框架 | 8 |
+| [pinia](skills/pinia/skill.md) | Vue 状态管理 | 25 |
+| [react](skills/react/skill.md) | React 库 | 3 |
+| [vue](skills/vue/skill.md) | Vue.js 核心 | 3 |
+| [vue-best-practices](skills/vue-best-practices/skill.md) | Vue 3 + TypeScript 最佳实践 | 100+ |
+| [vue-router-best-practices](skills/vue-router-best-practices/skill.md) | Vue Router 最佳实践 | 7 |
+| [vue-testing-best-practices](skills/vue-testing-best-practices/skill.md) | Vue 测试最佳实践 | 5 |
+| [zustand](skills/zustand/skill.md) | Zustand 状态管理 | 5 |
+| [unocss](skills/unocss/skill.md) | UnoCSS 原子 CSS 引擎 | 3 |
+| [react-best-practices](skills/react-best-practices/skill.md) | React 最佳实践 | 60+ |
+| [belos-street](skills/belos-street/skill.md) | Belos Street 项目约定 | 4 |
 
 ### 技能分类
 
 **Vue 生态系统**
-- vue - Vue.js 核心
-- pinia - 状态管理
-- vue-best-practices - 最佳实践
-- vue-router-best-practices - Router 最佳实践
-- vue-testing-best-practices - 测试最佳实践
+- [vue](skills/vue/skill.md) - Vue.js 核心
+- [pinia](skills/pinia/skill.md) - 状态管理
+- [vue-best-practices](skills/vue-best-practices/skill.md) - 最佳实践
+- [vue-router-best-practices](skills/vue-router-best-practices/skill.md) - Router 最佳实践
+- [vue-testing-best-practices](skills/vue-testing-best-practices/skill.md) - 测试最佳实践
 
 **React 生态系统**
-- react - React 库
-- react-best-practices - 最佳实践
-- nextjs - Next.js 框架
-- zustand - Zustand 状态管理
+- [react](skills/react/skill.md) - React 库
+- [react-best-practices](skills/react-best-practices/skill.md) - 最佳实践
+- [nextjs](skills/nextjs/skill.md) - Next.js 框架
+- [zustand](skills/zustand/skill.md) - Zustand 状态管理
 
 **工具链**
-- bun - Bun 运行时
-- unocss - 原子 CSS 引擎
+- [bun](skills/bun/skill.md) - Bun 运行时
+- [unocss](skills/unocss/skill.md) - 原子 CSS 引擎
+
+**项目约定**
+- [belos-street](skills/belos-street/skill.md) - Belos Street 项目约定
 
 ## 技能结构
 
