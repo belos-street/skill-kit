@@ -1,16 +1,26 @@
 {
-  "name": "skill-kit",
-  "version": "1.0.0",
+  "name": "@belos-street/skill-kit",
+  "version": "1.0.1",
   "description": "CLI tool for managing skill documentation - generate agents and skill directories",
   "type": "module",
   "main": "./index.ts",
   "bin": {
-    "skill-kit": "./lib/cli/index.ts"
+    "skill-kit": "./bin/skill-kit"
+  },
+  "scripts": {
+    "dev": "bun run ./index.ts -h",
+    "build": "bun build ./index.ts --outdir dist --target bun",
+    "build:binary": "bun build ./index.ts --outfile bin/skill-kit --target bun --compile",
+    "publish": "bun run ./scripts/publish.ts"
   },
   "files": [
+    "bin/",
     "lib/",
     "skills/",
-    "index.ts"
+    "index.ts",
+    "package.json",
+    "README.md",
+    "LICENSE"
   ],
   "repository": {
     "type": "git",
