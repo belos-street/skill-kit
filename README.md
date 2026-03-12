@@ -1,23 +1,23 @@
 # @belos-street/skill-kit
 
-> 用于管理 AI Agent 技能文档的 CLI 工具 - 生成 agents 和 skill 目录
+> CLI tool for managing AI Agent skill documentation - generate agents and skill directories
 
-## 关于
+## About
 
-`skill-kit` 是一个 CLI 工具，旨在帮助你管理和组织 AI Agent 的技能文档。它提供交互式界面来浏览、选择和安装技能到你的项目中，并自动生成必要的配置文件。
+`skill-kit` is a CLI tool that helps you manage and organize AI Agent skill documentation. It provides an interactive interface to browse, select, and install skills into your project, automatically generating necessary configuration files.
 
-## 特性
+## Features
 
-- 支持多选的交互式技能选择
-- 自动生成 `agents.md` 配置文件
-- 列出并查看可用技能的详细信息
-- 基于 Bun 构建，实现快速的 TypeScript 执行
-- 重复检测和智能冲突解决
-- 彩色终端输出，提供更好的用户体验
+- Interactive multi-select skill selection
+- Auto-generate `agents.md` configuration file
+- List and view detailed skill information
+- Built with Bun for fast TypeScript execution
+- Duplicate detection and smart conflict resolution
+- Colorful terminal output for better UX
 
-## 安装
+## Installation
 
-### 全局安装
+### Global Installation
 
 ```bash
 npm install -g @belos-street/skill-kit
@@ -27,7 +27,7 @@ or
 pnpm add -g @belos-street/skill-kit
 ```
 
-### 使用 npx
+### Using npx
 
 ```bash
 npx @belos-street/skill-kit
@@ -37,44 +37,44 @@ or
 pnpx @belos-street/skill-kit 
 ```
 
-## 使用方法
+## Usage
 
-### 列出可用技能
+### List Available Skills
 
-查看所有可用技能及其描述：
+View all available skills with descriptions:
 
 ```bash
 skill-kit list
 ```
 
-输出示例：
+Output example:
 ```
-可用技能：
-  bun - Bun 运行时和工具链
-  nextjs - Next.js React 框架
-  pinia - Vue 状态管理
-  react - React 库
-  vue-best-practices - Vue.js 最佳实践
-  vue-router-best-practices - Vue Router 最佳实践
-  vue-testing-best-practices - Vue 测试最佳实践
-  zustand - Zustand 状态管理
-  unocss - UnoCSS 原子 CSS 引擎
+Available skills:
+  bun - Bun runtime and toolkit
+  nextjs - Next.js React framework
+  pinia - Vue state management
+  react - React library
+  vue-best-practices - Vue.js best practices
+  vue-router-best-practices - Vue Router best practices
+  vue-testing-best-practices - Vue testing best practices
+  zustand - Zustand state management
+  unocss - UnoCSS atomic CSS engine
   ...
 
-总计：15 个技能
+Total: 15 skills
 ```
 
-### 添加技能（交互式）
+### Add Skills (Interactive)
 
-通过交互式选择将技能添加到当前目录：
+Add skills to current directory via interactive selection:
 
 ```bash
 skill-kit add
 ```
 
-你将看到多选界面：
+You'll see a multi-select interface:
 ```
-选择要添加的技能：
+Select skills to add:
 
   bun
   nextjs
@@ -86,237 +86,230 @@ skill-kit add
   zustand
   unocss
 
-提示：空格选择，回车确认
+Hint: Space to select, Enter to confirm
 ```
 
-选择后，工具将：
-1. 将选中的技能生成到 `./skills/` 目录
-2. 生成 `agents.md` 配置文件
-3. 显示添加/跳过的技能摘要
+After selection, the tool will:
+1. Generate selected skills to `./skills/` directory
+2. Generate `agents.md` configuration file
+3. Show add/skip summary
 
-输出示例：
+Output example:
 ```
-正在复制技能...
+Copying skills...
 
-  bun: 已添加
-  nextjs: 已添加
-  pinia: 已添加
+  bun: added
+  nextjs: added
+  pinia: added
 
-完成！3 个已添加，0 个已跳过
+Done! 3 added, 0 skipped
 
-正在生成 agents.md...
-agents.md 已生成！
+Generating agents.md...
+agents.md generated!
 ```
 
-### 查看技能信息
+### View Skill Info
 
-获取特定技能的详细信息：
+Get detailed information about a specific skill:
 
 ```bash
-skill-kit info <技能名称>
-```
+skill-kit info <skill-name>
 
-示例：
-```bash
+Example:
 skill-kit info nextjs
-```
 
-输出：
-```
+Output:
 nextjs
 
-描述：Next.js React 框架
-路径：/path/to/skills/nextjs
-参考文件：8 个
+Description: Next.js React framework
+Path: /path/to/skills/nextjs
+References: 8 files
 
---- 前置数据 ---
+--- Frontmatter ---
   name: nextjs
   title: Next.js
   tags: react, framework, ssr
 ```
 
-## 可用技能
+## Available Skills
 
-### 内置技能
+### Built-in Skills
 
-此集合包含各种现代 Web 开发技术栈的技能：
+This collection contains skills for various modern web development tech stacks:
 
-| 技能 | 描述 | 参考文件数 |
+| Skill | Description | Reference Files |
 |--------|-------------|-----------------|
-| [bun](skills/bun/skill.md) | Bun 运行时和工具链 | 6 |
-| [nextjs](skills/nextjs/skill.md) | Next.js React 框架 | 8 |
-| [pinia](skills/pinia/skill.md) | Vue 状态管理 | 25 |
-| [react](skills/react/skill.md) | React 库 | 3 |
-| [vue](skills/vue/skill.md) | Vue.js 核心 | 3 |
-| [vue-best-practices](skills/vue-best-practices/skill.md) | Vue 3 + TypeScript 最佳实践 | 100+ |
-| [vue-router-best-practices](skills/vue-router-best-practices/skill.md) | Vue Router 最佳实践 | 7 |
-| [zustand](skills/zustand/skill.md) | Zustand 状态管理 | 5 |
-| [unocss](skills/unocss/skill.md) | UnoCSS 原子 CSS 引擎 | 3 |
-| [react-best-practices](skills/react-best-practices/skill.md) | React 最佳实践 | 60+ |
-| [belos-street](skills/belos-street/skill.md) | Belos Street 项目约定 | 4 |
+| [bun](skills/bun/skill.md) | Bun runtime and toolkit | 6 |
+| [nextjs](skills/nextjs/skill.md) | Next.js React framework | 8 |
+| [pinia](skills/pinia/skill.md) | Vue state management | 25 |
+| [react](skills/react/skill.md) | React library | 3 |
+| [vue](skills/vue/skill.md) | Vue.js core | 3 |
+| [vue-best-practices](skills/vue-best-practices/skill.md) | Vue 3 + TypeScript best practices | 100+ |
+| [vue-router-best-practices](skills/vue-router-best-practices/skill.md) | Vue Router best practices | 7 |
+| [zustand](skills/zustand/skill.md) | Zustand state management | 5 |
+| [unocss](skills/unocss/skill.md) | UnoCSS atomic CSS engine | 3 |
+| [react-best-practices](skills/react-best-practices/skill.md) | React best practices | 60+ |
+| [belos-street](skills/belos-street/skill.md) | Belos Street coding conventions | 4 |
 
-### 技能分类
+### Skill Categories
 
-**Vue 生态系统**
-- [vue](skills/vue/skill.md) - Vue.js 核心
-- [pinia](skills/pinia/skill.md) - 状态管理
-- [vue-best-practices](skills/vue-best-practices/skill.md) - 最佳实践
-- [vue-router-best-practices](skills/vue-router-best-practices/skill.md) - Router 最佳实践
-- [vue-testing-best-practices](skills/vue-testing-best-practices/skill.md) - 测试最佳实践
+**Vue Ecosystem**
+- [vue](skills/vue/skill.md) - Vue.js core
+- [pinia](skills/pinia/skill.md) - State management
+- [vue-best-practices](skills/vue-best-practices/skill.md) - Best practices
+- [vue-router-best-practices](skills/vue-router-best-practices/skill.md) - Router best practices
+- [vue-testing-best-practices](skills/vue-testing-best-practices/skill.md) - Testing best practices
 
-**React 生态系统**
-- [react](skills/react/skill.md) - React 库
-- [react-best-practices](skills/react-best-practices/skill.md) - 最佳实践
-- [nextjs](skills/nextjs/skill.md) - Next.js 框架
-- [zustand](skills/zustand/skill.md) - Zustand 状态管理
+**React Ecosystem**
+- [react](skills/react/skill.md) - React library
+- [react-best-practices](skills/react-best-practices/skill.md) - Best practices
+- [nextjs](skills/nextjs/skill.md) - Next.js framework
+- [zustand](skills/zustand/skill.md) - Zustand state management
 
-**工具链**
-- [bun](skills/bun/skill.md) - Bun 运行时
-- [unocss](skills/unocss/skill.md) - 原子 CSS 引擎
+**Tooling**
+- [bun](skills/bun/skill.md) - Bun runtime
+- [unocss](skills/unocss/skill.md) - Atomic CSS engine
 
-**项目约定**
-- [belos-street](skills/belos-street/skill.md) - Belos Street 项目约定
+**Coding Conventions**
+- [belos-street](skills/belos-street/skill.md) - Belos Street coding conventions
 
-## 技能结构
+## Skill Structure
 
-每个技能遵循以下结构：
+Each skill follows this structure:
 
 ```
 skills/
-├── <技能名称>/
-│   ├── skill.md              # 包含元数据的主技能文件
-│   └── reference/            # 参考文档
+├── <skill-name>/
+│   ├── skill.md              # Main skill file with metadata
+│   └── reference/            # Reference documents
 │       ├── basics.md
 │       ├── advanced.md
 │       └── ...
 ```
 
-### skill.md 格式
+### skill.md Format
 
-`skill.md` 文件包含元数据和文档：
+The `skill.md` file contains metadata and documentation:
 
 ```yaml
 ---
-name: 技能名称
-title: 技能标题
-description: 此技能涵盖内容的简要描述
-tags: 标签1, 标签2, 标签3
+name: skill-name
+title: Skill Title
+description: Brief description of what this skill covers
+tags: tag1, tag2, tag3
 ---
 
-# 技能标题
+# Skill Title
 
-详细文档和最佳实践...
+Detailed documentation and best practices...
 
-## 核心概念
+## Core Concepts
 
-- 概念 1
-- 概念 2
+- Concept 1
+- Concept 2
 
-## 使用示例
+## Usage Examples
 
 ```typescript
-// 示例代码
+// Example code
 ```
 
-## 最佳实践
+## Best Practices
 
-1. 最佳实践 1
-2. 最佳实践 2
+1. Best practice 1
+2. Best practice 2
+```
 
+### Frontmatter Fields
 
-### 前置数据字段
+- `name` - Unique identifier for the skill
+- `title` - Display title
+- `description` - Brief description
+- `tags` - Comma-separated tags for categorization
 
-- `name` - 技能的唯一标识符
-- `title` - 显示标题
-- `description` - 简要描述
-- `tags` - 用于分类的逗号分隔标签
-
-## 生成的文件
+## Generated Files
 
 ### agents.md
 
-当你添加技能时，`skill-kit` 会自动生成 `agents.md` 文件：
+When you add skills, `skill-kit` automatically generates an `agents.md` file:
 
 ```markdown
-# Agents 配置
+# Agents Configuration
 
-> 此文件由 skill-kit 自动生成
+> This file is auto-generated by skill-kit
 
-## 可用技能
+## Available Skills
 
 ### nextjs
 
-> Next.js React 框架
+> Next.js React framework
 
-**文件：**
-- `skills/nextjs/skill.md` - 主技能文件
-- `skills/nextjs/reference/` - 8 个参考文件
+**Files:**
+- `skills/nextjs/skill.md` - Main skill file
+- `skills/nextjs/reference/` - 8 reference files
 
-**元数据：**
+**Metadata:**
 - name: nextjs
 - title: Next.js
 - tags: react, framework, ssr
 
 ### pinia
 
-> Vue 状态管理库
+> Vue state management library
 
-**文件：**
-- `skills/pinia/skill.md` - 主技能文件
-- `skills/pinia/reference/` - 25 个参考文件
+**Files:**
+- `skills/pinia/skill.md` - Main skill file
+- `skills/pinia/reference/` - 25 reference files
 
 ---
-*由 skill-kit 生成*
+*Generated by skill-kit*
 ```
 
-此文件作为配置文件，让 AI Agent 了解项目中可用的技能。
+This file serves as a configuration file for AI Agents to understand available skills in your project.
 
-## 项目结构
+## Project Structure
 
 ```
 skill-kit/
-├── bin/
-│   └── skill-kit          # CLI 可执行文件
 ├── lib/
-│   ├── cli/               # 命令行界面
-│   │   └── index.ts      # CLI 命令（list, add, info）
-│   ├── fs/                # 文件系统工具
-│   │   └── index.ts      # 复制、读取、写入操作
-│   ├── generator/          # 技能生成器
-│   │   └── index.ts      # 添加技能到目录
-│   ├── logger/            # 日志工具
-│   │   └── index.ts      # 彩色控制台输出
-│   ├── skill/             # 技能管理
-│   │   └── index.ts      # 读取和解析技能
-│   └── template/          # 模板生成器
-│       └── index.ts      # 生成 agents.md
+│   ├── cli/                 # Command line interface
+│   │   └── index.ts        # CLI commands (list, add, info)
+│   ├── fs/                 # File system utilities
+│   │   └── index.ts        # Copy, read, write operations
+│   ├── generator/          # Skill generator
+│   │   └── index.ts        # Add skills to directory
+│   ├── logger/             # Logging utilities
+│   │   └── index.ts        # Colorful console output
+│   ├── skill/              # Skill management
+│   │   └── index.ts        # Read and parse skills
+│   └── template/           # Template generator
+│       └── index.ts        # Generate agents.md
 ├── scripts/
-│   └── publish.ts         # 发布脚本
-├── skills/               # 内置技能
+│   └── publish.ts          # Publish script
+├── skills/                 # Built-in skills
 │   ├── bun/
 │   ├── nextjs/
 │   ├── pinia/
 │   ├── react/
 │   └── ...
-├── index.ts              # 入口文件
+├── index.ts                # Entry point
 ├── package.json
 └── README.md
 ```
 
-### 项目命令
+### Project Commands
 
 ```bash
-# 列出所有技能
+# List all skills
 bun run ./index.ts list
 
-# 交互式添加技能
+# Interactive add skills
 bun run ./index.ts add
 
-# 查看技能信息
-bun run ./index.ts info <技能名称>
+# View skill info
+bun run ./index.ts info <skill-name>
 ```
 
-## 致谢
+## Acknowledgments
 
-- 受 [antfu/skills](https://github.com/antfu/skills) 启发
-
+- Inspired by [antfu/skills](https://github.com/antfu/skills)
