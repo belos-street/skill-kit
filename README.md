@@ -150,7 +150,6 @@ nextjs
 | [vue](skills/vue/skill.md) | Vue.js 核心 | 3 |
 | [vue-best-practices](skills/vue-best-practices/skill.md) | Vue 3 + TypeScript 最佳实践 | 100+ |
 | [vue-router-best-practices](skills/vue-router-best-practices/skill.md) | Vue Router 最佳实践 | 7 |
-| [vue-testing-best-practices](skills/vue-testing-best-practices/skill.md) | Vue 测试最佳实践 | 5 |
 | [zustand](skills/zustand/skill.md) | Zustand 状态管理 | 5 |
 | [unocss](skills/unocss/skill.md) | UnoCSS 原子 CSS 引擎 | 3 |
 | [react-best-practices](skills/react-best-practices/skill.md) | React 最佳实践 | 60+ |
