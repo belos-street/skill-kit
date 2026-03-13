@@ -67,7 +67,13 @@ export async function getAllSkills(): Promise<Skill[]> {
         const refEntries = await readdir(referenceDir)
         referenceCount = refEntries.filter((f) => f.endsWith('.md')).length
       } catch {
-        referenceCount = 0
+        try {
+          const referencesDir = join(skillPath, 'references')
+          const refEntries = await readdir(referencesDir)
+          referenceCount = refEntries.filter((f) => f.endsWith('.md')).length
+        } catch {
+          referenceCount = 0
+        }
       }
 
       skills.push({
