@@ -1,6 +1,8 @@
 ---
 name: frontend-design
+title: Frontend Design
 description: Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when building web components, pages, artifacts, or applications (websites, landing pages, dashboards, React/Vue components, HTML/CSS layouts). Generates creative, polished code and UI design that avoids generic aesthetics. Complete terms in LICENSE.txt.
+tags: frontend, ui-design, css, html, layout, typography, color-theory, animation, accessibility, design-system
 ---
 
 # Frontend Design

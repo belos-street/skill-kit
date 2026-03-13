@@ -239,11 +239,39 @@ cp ../react/LICENSE.md .
 - [ ] 代码示例语法正确
 - [ ] 文件命名使用 kebab-case
 
-### 步骤 6：更新模板（重要）
+### 步骤 6：同步更新文档（重要）
+
+添加新 skill 后，必须同步更新以下文档：
+
+#### 6.1 更新 README.md
+
+在 `README.md` 的以下位置添加新 skill：
+
+1. **Available Skills 表格**：在表格中添加一行，包含 skill 名称、描述和参考文件数量
+2. **Skill Categories**：在相应的分类下添加 skill 链接
+
+示例：
+
+```markdown
+| [frontend-design](skills/frontend-design/skill.md) | Frontend design principles | 6 |
+```
+
+以及：
+
+```markdown
+**Design & UI**
+- [frontend-design](skills/frontend-design/skill.md) - Frontend design principles and best practices
+```
+
+#### 6.2 更新本 llm.md（如需要）
+
+如果新 skill 有特殊的配置或使用方式，可以在 llm.md 中添加相关说明。
+
+### 步骤 7：更新模板（重要）
 
 当添加新 skill 后，需要更新以下内容：
 
-#### 6.1 更新 lib/parser.js（待实现）
+#### 7.1 更新 lib/parser.js（待实现）
 
 确保新 skill 能被正确解析：
 
@@ -264,7 +292,7 @@ export function parseSkill(skillPath) {
 }
 ```
 
-#### 6.2 更新 lib/template.js（待实现）
+#### 7.2 更新 lib/template.js（待实现）
 
 确保新 skill 能被包含在 agents.md 模板中：
 
@@ -279,7 +307,7 @@ export function generateAgentsMD(selectedSkills, skillsData) {
 }
 ```
 
-#### 6.3 更新 CLI（待实现）
+#### 7.3 更新 CLI（待实现）
 
 确保新 skill 能在选择器中显示：
 
@@ -292,7 +320,7 @@ export async function showSkillSelector() {
 }
 ```
 
-### 步骤 7：测试
+### 步骤 8：测试
 
 ```bash
 # 测试 CLI 是否能识别新 skill
@@ -394,11 +422,10 @@ version: "2.0.0"  # 更新版本号
 
 ## 技术栈
 
-- **运行时**: Node.js / Bun
+- **运行时**: Bun
 - **CLI 工具**: inquirer / prompts
 - **命令行解析**: commander / yargs
 - **文件操作**: fs (Node.js built-in)
-- **模板引擎**: 自定义模板（待实现）
 
 ## 开发流程
 
