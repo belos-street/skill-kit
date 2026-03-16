@@ -151,6 +151,7 @@ This collection contains skills for various modern web development tech stacks:
 | [react-best-practices](skills/react-best-practices/skill.md) | React best practices | 60+ |
 | [belos-street](skills/belos-street/skill.md) | Belos Street coding conventions | 4 |
 | [frontend-design](skills/frontend-design/skill.md) | Frontend design principles and best practices | 6 |
+| [ui-templates](skills/ui-templates/skill.md) | Collection of distinctive UI design templates | 5 |
 
 ### Skill Categories
 
@@ -173,6 +174,7 @@ This collection contains skills for various modern web development tech stacks:
 
 **Design & UI**
 - [frontend-design](skills/frontend-design/skill.md) - Frontend design principles and best practices
+- [ui-templates](skills/ui-templates/skill.md) - Collection of distinctive UI design templates
 
 **Coding Conventions**
 - [belos-street](skills/belos-street/skill.md) - Belos Street coding conventions
