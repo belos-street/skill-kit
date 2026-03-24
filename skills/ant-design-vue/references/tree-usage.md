@@ -1,6 +1,7 @@
 ---
 name: tree-usage
 description: Ant Design Vue Tree 树形组件的用法，包括基本数据、勾选、异步加载和自定义节点。
+official_doc: https://www.antdv.com/components/tree
 ---
 
 # Tree 树形组件

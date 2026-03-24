@@ -1,6 +1,7 @@
 ---
 name: form-validation
 description: Ant Design Vue Form 表单验证的完整指南，包括规则定义、异步验证和自定义验证器。
+official_doc: https://www.antdv.com/components/form
 ---
 
 # Form 表单验证

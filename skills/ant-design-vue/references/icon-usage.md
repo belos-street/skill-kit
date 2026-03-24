@@ -1,6 +1,7 @@
 ---
 name: icon-usage
 description: Ant Design Vue Icon 组件的用法，包括图标引入、组合使用和常见错误。
+official_doc: https://www.antdv.com/components/icon
 ---
 
 # Icon 组件

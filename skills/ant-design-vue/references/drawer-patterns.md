@@ -1,6 +1,7 @@
 ---
 name: drawer-patterns
 description: Ant Design Vue Drawer 抽屉组件的用法，包括基础用法、 placement、宽高控制和表单抽屉。
+official_doc: https://www.antdv.com/components/drawer
 ---
 
 # Drawer 抽屉组件

@@ -1,6 +1,7 @@
 ---
 name: date-picker-usage
 description: Ant Design Vue DatePicker 日期选择器的用法，包括日期范围、格式化、禁用日期等。
+official_doc: https://www.antdv.com/components/date-picker
 ---
 
 # DatePicker 日期选择器

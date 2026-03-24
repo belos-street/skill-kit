@@ -1,6 +1,7 @@
 ---
 name: table-advanced
 description: Ant Design Vue Table 表格的高级用法，包括自定义列、分页、排序、筛选、行选择等。
+official_doc: https://www.antdv.com/components/table
 ---
 
 # Table 高级用法

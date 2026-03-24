@@ -1,6 +1,7 @@
 ---
 name: upload-usage
 description: Ant Design Vue Upload 上传组件的用法，包括基本上传、拖拽上传、图片预览等。
+official_doc: https://www.antdv.com/components/upload
 ---
 
 # Upload 上传组件

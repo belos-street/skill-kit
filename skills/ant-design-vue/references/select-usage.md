@@ -1,6 +1,7 @@
 ---
 name: select-usage
 description: Ant Design Vue Select 选择器的用法，包括单选、多选、搜索和远程数据。
+official_doc: https://www.antdv.com/components/select
 ---
 
 # Select 选择器

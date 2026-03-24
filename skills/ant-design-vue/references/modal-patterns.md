@@ -1,6 +1,7 @@
 ---
 name: modal-patterns
 description: Ant Design Vue Modal 对话框的用法，包括基础用法、异步关闭、自定义页脚和确认框。
+official_doc: https://www.antdv.com/components/modal
 ---
 
 # Modal 对话框

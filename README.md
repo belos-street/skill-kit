@@ -152,6 +152,8 @@ This collection contains skills for various modern web development tech stacks:
 | [belos-street](skills/belos-street/skill.md) | Belos Street coding conventions | 4 |
 | [frontend-design](skills/frontend-design/skill.md) | Frontend design principles and best practices | 6 |
 | [ui-templates](skills/ui-templates/skill.md) | Collection of distinctive UI design templates | 5 |
+| [ant-design-vue](skills/ant-design-vue/skill.md) | Ant Design Vue component library | 15 |
+| [golang-best-practices](skills/golang-best-practices/skill.md) | Go best practices and patterns | 37 |
 
 ### Skill Categories
 
@@ -175,9 +177,13 @@ This collection contains skills for various modern web development tech stacks:
 **Design & UI**
 - [frontend-design](skills/frontend-design/skill.md) - Frontend design principles and best practices
 - [ui-templates](skills/ui-templates/skill.md) - Collection of distinctive UI design templates
+- [ant-design-vue](skills/ant-design-vue/skill.md) - Ant Design Vue component library
 
 **Coding Conventions**
 - [belos-street](skills/belos-street/skill.md) - Belos Street coding conventions
+
+**Languages & Runtimes**
+- [golang-best-practices](skills/golang-best-practices/skill.md) - Go best practices and WebAssembly
 
 ## Skill Structure
 

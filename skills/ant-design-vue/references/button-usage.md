@@ -1,6 +1,7 @@
 ---
 name: button-usage
 description: Ant Design Vue Button 组件的正确用法，包括类型、状态、图标组合。
+official_doc: https://www.antdv.com/components/button
 ---
 
 # Button 组件

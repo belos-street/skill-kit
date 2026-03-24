@@ -1,6 +1,7 @@
 ---
 name: config-provider
 description: Ant Design Vue ConfigProvider 全局配置，用于主题定制、国际化、组件属性默认值的设置。
+official_doc: https://www.antdv.com/components/config-provider
 ---
 
 # ConfigProvider
