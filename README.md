@@ -154,6 +154,7 @@ This collection contains skills for various modern web development tech stacks:
 | [ui-templates](skills/ui-templates/skill.md) | Collection of distinctive UI design templates | 5 |
 | [ant-design-vue](skills/ant-design-vue/skill.md) | Ant Design Vue component library | 15 |
 | [golang-best-practices](skills/golang-best-practices/skill.md) | Go best practices and patterns | 37 |
+| [langchain](skills/langchain/skill.md) | LangChain framework for AI agents | 12 |
 
 ### Skill Categories
 
@@ -181,6 +182,9 @@ This collection contains skills for various modern web development tech stacks:
 
 **Coding Conventions**
 - [belos-street](skills/belos-street/skill.md) - Belos Street coding conventions
+
+**AI & LLM**
+- [langchain](skills/langchain/skill.md) - LangChain framework for building AI agents
 
 **Languages & Runtimes**
 - [golang-best-practices](skills/golang-best-practices/skill.md) - Go best practices and WebAssembly
