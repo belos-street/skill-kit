@@ -155,6 +155,8 @@ This collection contains skills for various modern web development tech stacks:
 | [ant-design-vue](skills/ant-design-vue/skill.md) | Ant Design Vue component library | 15 |
 | [golang-best-practices](skills/golang-best-practices/skill.md) | Go best practices and patterns | 37 |
 | [langchain](skills/langchain/skill.md) | LangChain framework for AI agents | 12 |
+| [brainstorming](skills/brainstorming/SKILL.md) | Design exploration before implementation | 3 |
+| [writing-plans](skills/writing-plans/SKILL.md) | Implementation plan creation | 2 |
 
 ### Skill Categories
 
@@ -185,6 +187,10 @@ This collection contains skills for various modern web development tech stacks:
 
 **AI & LLM**
 - [langchain](skills/langchain/skill.md) - LangChain framework for building AI agents
+
+**Workflow & Process**
+- [brainstorming](skills/brainstorming/SKILL.md) - Design exploration before implementation
+- [writing-plans](skills/writing-plans/SKILL.md) - Implementation plan creation
 
 **Languages & Runtimes**
 - [golang-best-practices](skills/golang-best-practices/skill.md) - Go best practices and WebAssembly

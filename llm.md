@@ -44,6 +44,24 @@ skill-kit/
 │       ├── reference/
 │       │   └── ...
 │       └── LICENSE.md
+│   ├── langchain/
+│   │   ├── skill.md
+│   │   ├── references/
+│   │   │   ├── agents-basics.md
+│   │   │   ├── models-integration.md
+│   │   │   └── ...
+│   │   └── LICENSE.md
+│   ├── brainstorming/
+│   │   ├── SKILL.md
+│   │   ├── visual-companion.md
+│   │   ├── spec-document-reviewer-prompt.md
+│   │   └── scripts/
+│   │       ├── frame-template.html
+│   │       ├── helper.js
+│   │       └── ...
+│   └── writing-plans/
+│       ├── SKILL.md
+│       └── plan-document-reviewer-prompt.md
 ├── scripts/
 │   └── todo.md            # 开发计划
 ├── AGENTS.md              # 项目级 agents 指南（本文件）
