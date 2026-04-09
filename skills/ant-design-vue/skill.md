@@ -68,7 +68,7 @@ const handleClick = () => {
 | 组件 | 官方文档 | Reference |
 |------|----------|-----------|
 | [Menu](https://www.antdv.com/components/menu) | [menu-usage](references/menu-usage.md) | |
-| [Tabs](https://www.antdv.com/components/tabs) | - | |
+| [Tabs](https://www.antdv.com/components/tabs) | [tabs-usage](references/tabs-usage.md) | |
 | [Breadcrumb](https://www.antdv.com/components/breadcrumb) | - | |
 
 ### 数据录入 Data Entry
