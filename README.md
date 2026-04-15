@@ -183,7 +183,7 @@ This collection contains skills for various modern web development tech stacks:
 - [ant-design-vue](skills/ant-design-vue/skill.md) - Ant Design Vue component library
 
 **Coding Conventions**
-- [belos-street](skills/belos-street/skill.md) - Belos Street coding conventions
+- [belos-street](skills/belos-street/skill.md) - Belos Street coding conventions (includes LLM coding guidelines)
 
 **AI & LLM**
 - [langchain](skills/langchain/skill.md) - LangChain framework for building AI agents

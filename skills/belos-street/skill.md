@@ -26,6 +26,10 @@ tags: [conventions, best-practices, coding-style]
 
 - 测试理念 → See [testing-philosophy](reference/testing-philosophy.md)
 
+## LLM Coding Guidelines
+
+- LLM 编码指南 → See [llm-coding-guidelines](reference/llm-coding-guidelines.md)
+
 ## Quick Reference
 
 ### 命名风格速查表
