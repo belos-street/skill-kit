@@ -62,6 +62,25 @@ skill-kit/
 │   └── writing-plans/
 │       ├── SKILL.md
 │       └── plan-document-reviewer-prompt.md
+│   └── fastify-best-practices/
+│       ├── SKILL.md
+│       ├── tile.json
+│       └── rules/
+│           ├── plugins.md
+│           ├── routes.md
+│           ├── schemas.md
+│           └── ...
+│   └── nestjs-best-practices/
+│       ├── SKILL.md
+│       ├── AGENTS.md
+│       ├── README.md
+│       ├── scripts/
+│       │   ├── build-agents.ts
+│       │   └── build.sh
+│       └── rules/
+│           ├── arch-avoid-circular-deps.md
+│           ├── security-validate-all-input.md
+│           └── ...
 ├── scripts/
 │   └── todo.md            # 开发计划
 ├── AGENTS.md              # 项目级 agents 指南（本文件）

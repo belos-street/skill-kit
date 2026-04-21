@@ -157,6 +157,8 @@ This collection contains skills for various modern web development tech stacks:
 | [langchain](skills/langchain/skill.md) | LangChain framework for AI agents | 12 |
 | [brainstorming](skills/brainstorming/SKILL.md) | Design exploration before implementation | 3 |
 | [writing-plans](skills/writing-plans/SKILL.md) | Implementation plan creation | 2 |
+| [fastify-best-practices](skills/fastify-best-practices/SKILL.md) | Fastify Node.js backend best practices | 19 |
+| [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md) | NestJS architecture and best practices | 40 |
 
 ### Skill Categories
 
@@ -194,6 +196,10 @@ This collection contains skills for various modern web development tech stacks:
 
 **Languages & Runtimes**
 - [golang-best-practices](skills/golang-best-practices/skill.md) - Go best practices and WebAssembly
+
+**Backend Frameworks**
+- [fastify-best-practices](skills/fastify-best-practices/SKILL.md) - Fastify Node.js backend best practices
+- [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md) - NestJS architecture and best practices
 
 ## Skill Structure
 
