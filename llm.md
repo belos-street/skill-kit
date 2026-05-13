@@ -81,6 +81,15 @@ skill-kit/
 │           ├── arch-avoid-circular-deps.md
 │           ├── security-validate-all-input.md
 │           └── ...
+│   └── react-native-skills/
+│       ├── SKILL.md
+│       ├── AGENTS.md
+│       ├── README.md
+│       ├── metadata.json
+│       └── rules/
+│           ├── list-performance-virtualize.md
+│           ├── animation-gpu-properties.md
+│           └── ...
 ├── scripts/
 │   └── todo.md            # 开发计划
 ├── AGENTS.md              # 项目级 agents 指南（本文件）
