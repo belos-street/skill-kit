@@ -164,27 +164,6 @@ This collection contains skills for various modern web development tech stacks:
 | [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md)         | NestJS architecture and best practices                  | 40              |
 | [react-native-skills](skills/react-native-skills/SKILL.md)             | React Native & Expo mobile development best practices   | 38              |
 
-### Superpowers Skills
-
-Integrated from [obra/superpowers](https://github.com/obra/superpowers) - a comprehensive skill framework for AI-assisted development workflows:
-
-| Skill                                                                                  | Description                                                                                           |
-| -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| [brainstorming](skills/superpowers/brainstorming/SKILL.md)                             | Design exploration before implementation - explores user intent, requirements and design              |
-| [writing-plans](skills/superpowers/writing-plans/SKILL.md)                             | Implementation plan creation with bite-sized tasks and TDD approach                                   |
-| [executing-plans](skills/superpowers/executing-plans/SKILL.md)                         | Execute implementation plans in separate sessions with review checkpoints                             |
-| [dispatching-parallel-agents](skills/superpowers/dispatching-parallel-agents/SKILL.md) | Use when facing 2+ independent tasks that can be worked on without shared state                       |
-| [subagent-driven-development](skills/superpowers/subagent-driven-development/SKILL.md) | Execute implementation plans with independent tasks using subagents                                   |
-| [systematic-debugging](skills/superpowers/systematic-debugging/SKILL.md)               | Use when encountering any bug, test failure, or unexpected behavior                                   |
-| [test-driven-development](skills/superpowers/test-driven-development/SKILL.md)         | Use when implementing any feature or bugfix, before writing implementation code                       |
-| [receiving-code-review](skills/superpowers/receiving-code-review/SKILL.md)             | Use when receiving code review feedback - requires technical rigor and verification                   |
-| [requesting-code-review](skills/superpowers/requesting-code-review/SKILL.md)           | Use when completing tasks or implementing major features to verify work meets requirements            |
-| [finishing-a-development-branch](skills/superpowers/finishing-a-development-branch/SKILL.md) | Guides completion of development work by presenting structured options for merge, PR, or cleanup |
-| [verification-before-completion](skills/superpowers/verification-before-completion/SKILL.md) | Requires running verification commands before claiming work is complete                            |
-| [using-superpowers](skills/superpowers/using-superpowers/SKILL.md)                     | Establishes how to find and use skills, requiring skill invocation before ANY response                |
-| [using-git-worktrees](skills/superpowers/using-git-worktrees/SKILL.md)                 | Ensures an isolated workspace exists via native tools or git worktree fallback                        |
-| [writing-skills](skills/superpowers/writing-skills/SKILL.md)                           | Use when creating new skills, editing existing skills, or verifying skills work before deployment     |
-
 ### Skill Categories
 
 **Vue Ecosystem**
@@ -343,28 +322,6 @@ bun run ./index.ts add
 # View skill info
 bun run ./index.ts info <skill-name>
 ```
-
-## Superpowers Integration
-
-This project integrates skills from [obra/superpowers](https://github.com/obra/superpowers), a comprehensive skill framework for AI-assisted development workflows. These skills are organized in the `skills/superpowers/` directory and cover the entire development lifecycle:
-
-- **Planning & Design**: brainstorming, writing-plans
-- **Implementation**: executing-plans, subagent-driven-development, test-driven-development
-- **Collaboration**: dispatching-parallel-agents, receiving-code-review, requesting-code-review
-- **Quality Assurance**: systematic-debugging, verification-before-completion
-- **Workflow Management**: finishing-a-development-branch, using-git-worktrees
-- **Skill Management**: using-superpowers, writing-skills
-
-### Using Superpowers Skills
-
-The superpowers skills are designed to work together as a complete development workflow. To use them effectively:
-
-1. Start with `using-superpowers` to understand how to discover and invoke skills
-2. Use `brainstorming` for design exploration before implementation
-3. Create implementation plans with `writing-plans`
-4. Execute plans using `executing-plans` or `subagent-driven-development`
-5. Use `systematic-debugging` when encountering issues
-6. Complete work with `verification-before-completion` and `finishing-a-development-branch`
 
 **Note:** These skills are stored in a subdirectory and are not automatically scanned by the `skill-kit` CLI. They are intended for direct reference and integration into your AI agent's workflow.
 
