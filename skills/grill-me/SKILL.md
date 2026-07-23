@@ -156,8 +156,3 @@ The persisted document follows 7 sections:
 5. Tech Constraints, Security & Performance Requirements
 6. Feature Acceptance Criteria
 7. Project Terminology Dictionary (Business Term → Unified Code Naming → Description)
-
-## Related Skills
-
-- [brainstorming](../brainstorming/SKILL.md) — Use after requirement clarification for design exploration
-- [writing-plans](../writing-plans/SKILL.md) — Use after requirements are clear to create implementation plans
