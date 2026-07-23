@@ -90,6 +90,11 @@ skill-kit/
 │           ├── list-performance-virtualize.md
 │           ├── animation-gpu-properties.md
 │           └── ...
+│   └── grill-me/
+│       ├── SKILL.md
+│       └── references/
+│           ├── grill-me.md
+│           └── grill-with-docs.md
 ├── scripts/
 │   └── todo.md            # 开发计划
 ├── AGENTS.md              # 项目级 agents 指南（本文件）

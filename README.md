@@ -165,6 +165,7 @@ This collection contains skills for various modern web development tech stacks:
 | [fastify-best-practices](skills/fastify-best-practices/SKILL.md)       | Fastify Node.js backend best practices                  | 19              |
 | [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md)         | NestJS architecture and best practices                  | 40              |
 | [react-native-skills](skills/react-native-skills/SKILL.md)             | React Native & Expo mobile development best practices   | 38              |
+| [grill-me](skills/grill-me/SKILL.md)                                   | Layered requirement clarification for vague requirements | 2               |
 
 ### Skill Categories
 
@@ -211,6 +212,7 @@ This collection contains skills for various modern web development tech stacks:
 - [brainstorming](skills/brainstorming/SKILL.md) - Design exploration before implementation
 - [writing-plans](skills/writing-plans/SKILL.md) - Implementation plan creation
 - [vibe-flow](skills/vibe-flow/skill.md) - Independent developer Vibe Coding full-process workflow
+- [grill-me](skills/grill-me/SKILL.md) - Layered requirement clarification for vague requirements
 
 **Languages & Runtimes**
 
