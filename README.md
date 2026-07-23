@@ -160,8 +160,6 @@ This collection contains skills for various modern web development tech stacks:
 | [golang-best-practices](skills/golang-best-practices/skill.md)         | Go best practices and patterns                          | 37              |
 | [langchain](skills/langchain/skill.md)                                 | LangChain framework for AI agents                       | 12              |
 | [vibe-flow](skills/vibe-flow/skill.md)                                 | Independent developer Vibe Coding full-process workflow | 14              |
-| [brainstorming](skills/brainstorming/SKILL.md)                         | Design exploration before implementation                | 3               |
-| [writing-plans](skills/writing-plans/SKILL.md)                         | Implementation plan creation                            | 2               |
 | [fastify-best-practices](skills/fastify-best-practices/SKILL.md)       | Fastify Node.js backend best practices                  | 19              |
 | [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md)         | NestJS architecture and best practices                  | 40              |
 | [react-native-skills](skills/react-native-skills/SKILL.md)             | React Native & Expo mobile development best practices   | 38              |
@@ -209,8 +207,6 @@ This collection contains skills for various modern web development tech stacks:
 
 **Workflow & Process**
 
-- [brainstorming](skills/brainstorming/SKILL.md) - Design exploration before implementation
-- [writing-plans](skills/writing-plans/SKILL.md) - Implementation plan creation
 - [vibe-flow](skills/vibe-flow/skill.md) - Independent developer Vibe Coding full-process workflow
 - [grill-me](skills/grill-me/SKILL.md) - Layered requirement clarification for vague requirements
 
@@ -222,6 +218,23 @@ This collection contains skills for various modern web development tech stacks:
 
 - [fastify-best-practices](skills/fastify-best-practices/SKILL.md) - Fastify Node.js backend best practices
 - [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md) - NestJS architecture and best practices
+
+**Superpowers (AI-Assisted Development Workflows)**
+
+- [brainstorming](skills/superpowers/brainstorming/SKILL.md) - Design exploration before implementation
+- [writing-plans](skills/superpowers/writing-plans/SKILL.md) - Implementation plan creation
+- [executing-plans](skills/superpowers/executing-plans/SKILL.md) - Execute plans with review checkpoints
+- [dispatching-parallel-agents](skills/superpowers/dispatching-parallel-agents/SKILL.md) - Parallel task execution
+- [subagent-driven-development](skills/superpowers/subagent-driven-development/SKILL.md) - Subagent-based development
+- [systematic-debugging](skills/superpowers/systematic-debugging/SKILL.md) - Systematic debugging approach
+- [test-driven-development](skills/superpowers/test-driven-development/SKILL.md) - TDD methodology
+- [receiving-code-review](skills/superpowers/receiving-code-review/SKILL.md) - Handling code review feedback
+- [requesting-code-review](skills/superpowers/requesting-code-review/SKILL.md) - Requesting code reviews
+- [finishing-a-development-branch](skills/superpowers/finishing-a-development-branch/SKILL.md) - Branch completion workflow
+- [verification-before-completion](skills/superpowers/verification-before-completion/SKILL.md) - Pre-completion verification
+- [using-superpowers](skills/superpowers/using-superpowers/SKILL.md) - Skill discovery and usage
+- [using-git-worktrees](skills/superpowers/using-git-worktrees/SKILL.md) - Git worktree management
+- [writing-skills](skills/superpowers/writing-skills/SKILL.md) - Skill creation and editing
 
 ## Skill Structure
 
@@ -284,11 +297,16 @@ skill-kit/
 ├── scripts/
 │   └── publish.ts          # Publish script
 ├── skills/                 # Built-in skills
+│   ├── superpowers/        # Integrated from obra/superpowers
+│   │   ├── brainstorming/
+│   │   ├── writing-plans/
+│   │   ├── executing-plans/
+│   │   └── ... (14 skills total)
 │   ├── bun/
 │   ├── nextjs/
 │   ├── pinia/
 │   ├── react/
-│   └── ...
+│   └── ... (20+ other skills)
 ├── index.ts                # Entry point
 ├── package.json
 └── README.md
@@ -307,7 +325,10 @@ bun run ./index.ts add
 bun run ./index.ts info <skill-name>
 ```
 
+**Note:** These skills are stored in a subdirectory and are not automatically scanned by the `skill-kit` CLI. They are intended for direct reference and integration into your AI agent's workflow.
+
 ## Acknowledgments
 
 - Inspired by [antfu/skills](https://github.com/antfu/skills)
+- Superpowers skills integrated from [obra/superpowers](https://github.com/obra/superpowers)
 
