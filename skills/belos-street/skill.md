@@ -30,6 +30,10 @@ tags: [conventions, best-practices, coding-style]
 
 - LLM 编码指南 → See [llm-coding-guidelines](reference/llm-coding-guidelines.md)
 
+## Documentation Writing
+
+- 文档编写规范 → See [doc-writing-guidelines](reference/doc-writing-guidelines.md)
+
 ## Quick Reference
 
 ### 命名风格速查表
