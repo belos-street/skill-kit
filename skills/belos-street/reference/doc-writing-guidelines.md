@@ -51,9 +51,9 @@ async function consume() {
 ```
 
 ❌ 反面示例（未标注的伪可运行代码）：
+
 ```js
 circle.fill('red')  // circle 未声明、缺注册与绘制，照抄即错
-```
 ```
 
 ### 3. 面试导向性
