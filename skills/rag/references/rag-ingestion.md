@@ -40,7 +40,3 @@ export const EMBED_CONCURRENCY = 1   // 并发起步值：CPU 推理端并行常
 
 - 单测覆盖：标题感知分段 / 超长兜底 / 去重 / 批量嵌入；
 - 冒烟：入库后元数据行数 == 向量库点数。
-
-## 项目绑定（若有）
-
-- ANZAI 项目 `src/service/document/` 的 chunker/ingest 实际实现、实测参数（`EMBED_BATCH_SIZE=128`、`EMBED_CONCURRENCY=1`）、pg_trgm/维度校验等陷阱与 `bun test` 清单见 `.agents/rules/rag-anzai.md` §4.2。

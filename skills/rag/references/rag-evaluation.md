@@ -99,7 +99,3 @@ export async function judgeAnswer(
 
 - 黄金集跑通：`judgeAnswer` 对标注样本输出 accuracy，且与人工标注 Pearson ≥ 0.7；
 - 回归：改检索/生成代码后重跑黄金集，accuracy 不得下降（下降即回归）。
-
-## 项目绑定（若有）
-
-- ANZAI 项目黄金集落地（20~30 条 / 5 意图分布 / `scripts/` 或 `src/service/agent/__tests__/`）、`evaluate.ts` 与 docs 6.3 衔接见 `.agents/rules/rag-anzai.md` §4.6。

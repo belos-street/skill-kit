@@ -159,7 +159,7 @@ This collection contains skills for various modern web development tech stacks:
 | [ant-design-vue](skills/ant-design-vue/skill.md)                       | Ant Design Vue component library                        | 15              |
 | [golang-best-practices](skills/golang-best-practices/skill.md)         | Go best practices and patterns                          | 37              |
 | [langchain](skills/langchain/skill.md)                                 | LangChain framework for AI agents                       | 12              |
-| [rag](skills/rag/SKILL.md)                                             | General RAG methodology (9 modules, iKnow-based)        | 10              |
+| [rag](skills/rag/skill.md)                                             | General RAG methodology (9 modules, iKnow-based)        | 10              |
 | [vibe-flow](skills/vibe-flow/skill.md)                                 | Independent developer Vibe Coding full-process workflow | 14              |
 | [fastify-best-practices](skills/fastify-best-practices/SKILL.md)       | Fastify Node.js backend best practices                  | 19              |
 | [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md)         | NestJS architecture and best practices                  | 40              |

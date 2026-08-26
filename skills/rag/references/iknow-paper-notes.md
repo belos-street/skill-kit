@@ -1,3 +1,14 @@
+---
+name: iknow-paper-notes
+description: iKnow 论文（ASE 2025）精读笔记——rag skill 族的论文依据，含失败根因分布 / 意图分类 / iKnow 系统设计 / 实验结果与经验教训，供实现检索问答层时对照原始结论。
+version: "2.0.0"
+license: MIT
+metadata:
+  author: Sectrend (iKnow paper reading notes)
+  tags: [rag, paper, iknow, research, llm]
+  parent: rag
+---
+
 # iKnow 论文精读笔记
 
 > 本文档是 `rag` skill 族的论文依据（经验来源），供实现检索/问答层时对照原始结论。
@@ -68,5 +79,3 @@
 - **用户侧**：问题要问完整；注意知识边界；关键决策核对引用来源。
 - **提供方**：用失败分析驱动迭代；意图检测 + 改写性价比最高；**回答附文档链接显著提升信任**。
 - **研究者**：意图分类学可合成领域 QA 数据集；症状分析需融合实时监控数据（静态文档不够）；多角度问题可试 GraphRAG。
-
-> 若用于 ANZAI 项目：论文做法 → ANZAI 落地的映射速查见 `.agents/rules/rag-anzai.md` §5。

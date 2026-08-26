@@ -143,7 +143,3 @@ export async function answer(original: string) {
 
 - **评估-改写循环**：首轮回答后 LLM 打分（score < 7 且 attempt < 3）→ 注入缺失点改写问题 → 重新检索（可引入 LangGraph 编排，需运行时 ≥ Node 22）；
 - 评估方法：LLM-as-judge 按意图特定标准判正确性（见 `iknow-paper-notes.md` / `rag-evaluation.md`），与人工标注做 Pearson 相关性验证（论文 r=0.713 为可接受基线）。
-
-## 项目绑定（若有）
-
-- ANZAI 项目 `src/service/agent/` 的骨架（`missing-knowledge.ts` / `qa-pipeline.ts`）、LLM 接入（OpenAI 兼容 + `config` 驱动）、SSE 与 docs 6.3 未来增强见 `.agents/rules/rag-anzai.md` §4.5。

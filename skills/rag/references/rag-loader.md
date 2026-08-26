@@ -27,7 +27,3 @@ metadata:
 - **统一出口接口**：建议 loader 产出形状如 `Doc { path: string; titles: string[]; text: string }`（示例），新增格式只需新增一个实现该接口的 loader，**不动分块/入库逻辑**——格式与链路解耦的边界就在"归一化接口"处；
 - **未启用新格式前勿提前加解析分支**：等真实格式需求再实现对应 loader（YAGNI）；
 - **验证**：为每种格式建 fixture 样本（含表格/多栏/乱码），断言归一化输出与 md 的结构一致（titles + text 可被 chunker 直接消费）；覆盖路径解析 / 内容读取 / 非法文件跳过。
-
-## 项目绑定（若有）
-
-- ANZAI 项目只索引 markdown（数据源为 md 文档站），其 `DOCS_ROOT` 路径、不扩展原因与未来扩展方式见 `.agents/rules/rag-anzai.md` §4.1。

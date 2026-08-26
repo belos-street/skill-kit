@@ -1,7 +1,6 @@
 ---
 name: rag
-description: 通用 RAG 方法论 Skill 集合（9 模块，跨项目可迁移）：加载 / 摄取 / 查询理解 / 检索 / 重排 / 生成防幻觉 / 多轮对话 / GraphRAG / 评估。每篇「通用原则 + 落地建议」，基于华为云 iKnow 论文（ASE 2025）经验。与 langchain skill 分工：本 skill 回答「为什么这么做、按什么模式做」，langchain skill 负责「API 怎么调」。若用于 ANZAI 项目，落地约束见 .agents/rules/rag-anzai.md。
-version: "3.0.0"
+description: 通用 RAG 方法论 Skill 集合（9 模块，跨项目可迁移）：加载 / 摄取 / 查询理解 / 检索 / 重排 / 生成防幻觉 / 多轮对话 / GraphRAG / 评估。每篇「通用原则 + 落地建议」，基于华为云 iKnow 论文（ASE 2025）经验。
 license: MIT
 metadata:
   author: Sectrend (experience distilled from iKnow paper, Huawei Cloud)
@@ -11,7 +10,7 @@ metadata:
 
 # RAG（检索增强生成）
 
-> **通用 RAG 方法论 Skill 集合**（跨项目可迁移，与具体项目解耦）。每篇为「通用原则（适用于任何 RAG 项目）+ 落地建议（项目无关的参考命名 / 结构 / 参数）」。项目专属绑定（ANZAI 见 `.agents/rules/rag-anzai.md`）。论文依据：华为云 + 港中文的 iKnow 经验论文（ASE 2025，PDF 见 references）——对 2000 条真实云运维查询的实证发现 **过半 RAG 失败源于查询侧**（不完整 32% / 超范围 10% / 无效 9%），**知识缺失 27%** 是第二大根因并直接诱发幻觉。故标准 RAG 上应增加「查询理解与改写」「缺失知识检测」两层。
+> **通用 RAG 方法论 Skill 集合**（跨项目可迁移，与具体项目解耦）。每篇为「通用原则（适用于任何 RAG 项目）+ 落地建议（项目无关的参考命名 / 结构 / 参数）」。项目专属绑定由所在项目侧 `.agents/rules/rag-*.md` 提供（不在本 skill 内），本 skill 保持项目无关。论文依据：华为云 + 港中文的 iKnow 经验论文（ASE 2025，PDF 见 references）——对 2000 条真实云运维查询的实证发现 **过半 RAG 失败源于查询侧**（不完整 32% / 超范围 10% / 无效 9%），**知识缺失 27%** 是第二大根因并直接诱发幻觉。故标准 RAG 上应增加「查询理解与改写」「缺失知识检测」两层。
 
 ## 通用 RAG 生命周期（不依赖任何项目）
 
@@ -49,10 +48,3 @@ metadata:
 | 检索不准确（相关文档不在 top-k） | 11% | **双通道混合检索 + RRF 融合**：dense + keyword 互补（rag-retrieval） |
 | 生成不准确 | 11% | 注入"原始问题 + 改写问题 + 上下文"三段 prompt，约束仅依据给定上下文回答（rag-generation） |
 | 超范围 / 无效查询 | 19% | 意图分类识别无效 / 越界问题，路由到降级回答（rag-query） |
-
-## 使用说明
-
-- 通用方法论层面：按「生命周期 → 对应模块」顺序阅读；各篇「落地建议」给出项目无关的参考结构（分层 / 命名 / 参数），具体技术栈与约束以所在项目为准；
-- 若用于 ANZAI：写 `src/service/document|retrieval|agent` 相关代码前，先读项目侧 `.agents/rules/rag-anzai.md` 获取绑定口径（启用状态 / 常量实测 / 决策边界 / 代码骨架）；
-- 涉及 LangChain API 具体用法时，按 `../langchain/skill.md` 的检索流程抓官方文档确认（本 skill 不内置 API 快照）；
-- 命名等编码规范参考 `../belos-street/skill.md`（如所在项目带有该技能）。

@@ -22,7 +22,7 @@ metadata:
 
 ## 论文依据（为什么必须做）
 
-iKnow 论文实证：检索侧失败合计 **38%**（知识缺失 27% + 检索不准确 11%）。其中「检索不准确」指**相关文档存在但没进 top-k**，论文的对策是两阶段检索（向量召回宽集 → 重排序取精集）。
+iKnow 论文实证：失败中落在**检索侧**的合计 **38%**，但由两类构成——「知识缺失 27%」（知识库内本无对应内容，属内容覆盖问题，由 `rag-generation` 的缺失知识检测/降级回答负责）与「检索不准确 11%」（相关文档存在但没进 top-k，属检索算法问题）。**本模块（混合检索 + RRF）负责的是「检索不准确」这 11%**：相关文档存在却因排名略低被截断，故对策是两阶段检索（向量召回宽集 → 重排序取精集）。不要把覆盖类问题误归到本模块头上。
 
 无独立 reranker 资源时，可用**双通道混合检索 + RRF 融合**等价替代：dense 通道管语义相似，keyword 通道管专有名词精确命中（API 名 / 命令 / 参数名），两者用 RRF 融合。**dense + keyword 本身就是"扩召回"，RRF 排序即"精取 top-N"**。
 
@@ -69,7 +69,7 @@ export async function hybridTopK(
   return fuse([denseHits, keywordHits]).slice(0, topK)
 }
 
-/** RRF（Reciprocal Rank Fusion）：score = Σ 1/(k + rank)，k = RRF_K */
+/** RRF（Reciprocal Rank Fusion）：score = Σ 1/(k + r)，r 为 1-based 排名（rank 从 0 计，故 +1），k = RRF_K */
 function fuse(lists: RetrievedChunk[][]): RetrievedChunk[] {
   const byId = new Map<string, RetrievedChunk & { rrf: number }>()
   for (const list of lists) {
@@ -101,7 +101,3 @@ function fuse(lists: RetrievedChunk[][]): RetrievedChunk[] {
 
 - 论文两阶段检索的"重排"阶段 → 引入 bge-reranker / bce-reranker（本地可跑）对 top-N 候选二次排序（详见 `rag-rerank.md`）；
 - 检索质量评估（召回率/命中位置）→ 参考 `iknow-paper-notes.md` 的 LLM-as-judge 方法（详见 `rag-evaluation.md`）。
-
-## 项目绑定（若有）
-
-- ANZAI 项目落地为 Qdrant dense + PG pg_trgm → RRF（docs/README.md 6.2 权威），`src/service/retrieval/` 的检索设计、骨架与陷阱见 `.agents/rules/rag-anzai.md` §4.4。

@@ -124,7 +124,3 @@ export async function rewriteQuery(
 - 每个意图至少 1 条"分类正确"用例（用 mock LLM 返回固定 JSON）；
 - 改写兜底：LLM 抛错/返回空串时 `rewriteQuery` 返回原问题；
 - 中文/其他语言查询改写：断言改写结果包含原问题的核心名词（防止改飞）。
-
-## 项目绑定（若有）
-
-- ANZAI 项目落地点（`src/service/retrieval/`、docs 1.2/6.3 决策边界、单测清单）见 `.agents/rules/rag-anzai.md` §4.3。
