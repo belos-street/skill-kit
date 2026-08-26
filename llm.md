@@ -17,87 +17,96 @@ skill-kit/
 │   ├── generator.js       # 文件生成逻辑
 │   ├── parser.js          # skill.md 解析逻辑
 │   └── template.js        # agents.md 模板生成逻辑
-├── skills/                 # 所有 skills
-│   ├── react/             # React skill
-│   │   ├── skill.md       # Skill 主文件（必需）
-│   │   ├── references/    # 参考文档目录（必需）
-│   │   │   ├── hooks.md
-│   │   │   └── components-patterns.md
-│   │   └── LICENSE.md     # License 文件（可选）
+├── skills/                 # 所有 skills（以实际目录为准）
+│   ├── react/                       # 入口 skill.md
+│   │   ├── skill.md
+│   │   └── references/              # 复数目录
 │   ├── react-best-practices/
 │   │   ├── skill.md
-│   │   ├── reference/     # 注意：这里是 reference（单数）
-│   │   │   └── hooks-state-update-batching.md
+│   │   ├── reference/               # 单数目录
 │   │   └── LICENSE.md
+│   ├── nextjs/
+│   │   ├── skill.md
+│   │   └── reference/
+│   ├── react-native-skills/
+│   │   ├── SKILL.md
+│   │   ├── AGENTS.md
+│   │   ├── README.md
+│   │   ├── metadata.json
+│   │   └── rules/                   # 精简规则集
 │   ├── vue/
 │   │   ├── skill.md
-│   │   ├── references/
-│   │   │   └── ...
-│   │   └── LICENSE.md
+│   │   └── references/
 │   ├── vue-best-practices/
 │   │   ├── skill.md
 │   │   ├── reference/
-│   │   │   └── ...
 │   │   └── LICENSE.md
-│   └── vue-router-best-practices/
-│       ├── skill.md
-│       ├── reference/
-│       │   └── ...
-│       └── LICENSE.md
+│   ├── vue-router-best-practices/
+│   │   ├── skill.md
+│   │   ├── reference/
+│   │   └── LICENSE.md
+│   ├── pinia/
+│   │   ├── skill.md
+│   │   └── reference/
+│   ├── ant-design-vue/
+│   │   ├── skill.md
+│   │   └── references/
+│   ├── zustand/
+│   │   ├── skill.md
+│   │   └── reference/
+│   ├── golang-best-practices/
+│   │   ├── skill.md
+│   │   └── references/
 │   ├── langchain/
 │   │   ├── skill.md
-│   │   ├── references/
-│   │   │   ├── agents-basics.md
-│   │   │   ├── models-integration.md
-│   │   │   └── ...
-│   │   └── LICENSE.md
-│   ├── brainstorming/
+│   │   └── references/
+│   ├── rag/
+│   │   ├── skill.md
+│   │   └── references/
+│   ├── bun/
+│   │   ├── skill.md
+│   │   └── reference/
+│   ├── fastify-best-practices/
 │   │   ├── SKILL.md
-│   │   ├── visual-companion.md
-│   │   ├── spec-document-reviewer-prompt.md
-│   │   └── scripts/
-│   │       ├── frame-template.html
-│   │       ├── helper.js
-│   │       └── ...
-│   └── writing-plans/
-│       ├── SKILL.md
-│       └── plan-document-reviewer-prompt.md
-│   └── fastify-best-practices/
-│       ├── SKILL.md
-│       ├── tile.json
-│       └── rules/
-│           ├── plugins.md
-│           ├── routes.md
-│           ├── schemas.md
-│           └── ...
-│   └── nestjs-best-practices/
-│       ├── SKILL.md
-│       ├── AGENTS.md
-│       ├── README.md
-│       ├── scripts/
-│       │   ├── build-agents.ts
-│       │   └── build.sh
-│       └── rules/
-│           ├── arch-avoid-circular-deps.md
-│           ├── security-validate-all-input.md
-│           └── ...
-│   └── react-native-skills/
-│       ├── SKILL.md
-│       ├── AGENTS.md
-│       ├── README.md
-│       ├── metadata.json
-│       └── rules/
-│           ├── list-performance-virtualize.md
-│           ├── animation-gpu-properties.md
-│           └── ...
-│   └── grill-me/
-│       ├── SKILL.md
-│       └── references/
-│           ├── grill-me.md
-│           └── grill-with-docs.md
+│   │   ├── tile.json
+│   │   └── rules/
+│   ├── nestjs-best-practices/
+│   │   ├── SKILL.md
+│   │   ├── AGENTS.md
+│   │   ├── README.md
+│   │   ├── scripts/
+│   │   └── rules/
+│   ├── frontend-design/
+│   │   ├── skill.md
+│   │   ├── references/
+│   │   └── LICENSE.md
+│   ├── ui-templates/
+│   │   ├── skill.md
+│   │   ├── references/              # 各设计风格模板
+│   │   └── demo/
+│   ├── unocss/
+│   │   ├── skill.md
+│   │   └── reference/
+│   ├── vibe-flow/
+│   │   ├── skill.md
+│   │   └── reference/
+│   ├── belos-street/                # 个人编码规范与代码审查
+│   │   ├── skill.md
+│   │   └── reference/
+│   ├── grill-me/
+│   │   ├── SKILL.md
+│   │   └── references/
+│   ├── superpowers/                 # 外壳技能：skill.md + 多套内置子技能
+│   │   ├── skill.md
+│   │   ├── brainstorming/
+│   │   ├── writing-plans/
+│   │   ├── systematic-debugging/
+│   │   ├── test-driven-development/
+│   │   └── ...
+│   └── ...
 ├── scripts/
 │   └── todo.md            # 开发计划
-├── AGENTS.md              # 项目级 agents 指南（本文件）
+├── AGENTS.md              # 项目级 agents 指南
 ├── package.json
 ├── README.md
 └── index.ts
