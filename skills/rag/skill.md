@@ -1,6 +1,6 @@
 ---
 name: rag
-description: 通用 RAG 方法论 Skill 集合（9 模块，跨项目可迁移）：加载 / 摄取 / 查询理解 / 检索 / 重排 / 生成防幻觉 / 多轮对话 / GraphRAG / 评估。每篇「通用原则 + 落地建议」，基于华为云 iKnow 论文（ASE 2025）经验。
+description: 通用 RAG 方法论 Skill 集合（9 模块，跨项目可迁移）：加载 / 摄取 / 查询理解 / 检索 / 重排 / 生成防幻觉 / 多轮对话 / GraphRAG / 评估。每篇「通用原则 + 落地建议」。
 license: MIT
 metadata:
   author: Sectrend (experience distilled from iKnow paper, Huawei Cloud)
