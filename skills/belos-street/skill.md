@@ -30,6 +30,10 @@ tags: [conventions, best-practices, coding-style]
 
 - 多维度代码审查（可读性 / 一致性 / 正确性 / 健壮性 / 耦合 / 抽象 / 性能 / 安全）→ See [code-review-dimensions](reference/code-review-dimensions.md)
 
+## Project Evaluation
+
+- 项目综合水平评价（10 分制多维评分 + 团队画像 + 行动优先级）→ See [project-evaluator](reference/project-evaluator.md)
+
 ## LLM Coding Guidelines
 
 - LLM 编码指南 → See [llm-coding-guidelines](reference/llm-coding-guidelines.md)

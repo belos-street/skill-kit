@@ -51,18 +51,18 @@ Output example:
 
 ```
 Available skills:
+  ant-design-vue - Ant Design Vue component library
+  belos-street - Belos Street coding conventions
   bun - Bun runtime and toolkit
+  fastify-best-practices - Fastify Node.js backend best practices
   nextjs - Next.js React framework
-  pinia - Vue state management
+  rag - General RAG methodology
   react - React library
-  vue-best-practices - Vue.js best practices
-  vue-router-best-practices - Vue Router best practices
-  vue-testing-best-practices - Vue testing best practices
-  zustand - Zustand state management
-  unocss - UnoCSS atomic CSS engine
+  superpowers - AI-assisted development workflows
+  vue-best-practices - Vue 3 + TypeScript best practices
   ...
 
-Total: 15 skills
+Total: 23 skills
 ```
 
 ### Add Skills (Interactive)
@@ -78,15 +78,14 @@ You'll see a multi-select interface:
 ```
 Select skills to add:
 
+  ant-design-vue
+  belos-street
   bun
-  nextjs
-  pinia
+  rag
   react
+  superpowers
   vue-best-practices
-  vue-router-best-practices
-  vue-testing-best-practices
-  zustand
-  unocss
+  ...
 
 Hint: Space to select, Enter to confirm
 ```
@@ -139,32 +138,33 @@ References: 8 files
 
 ### Built-in Skills
 
-This collection contains skills for various modern web development tech stacks:
+This collection contains 23 skills covering web frontend/backend, mobile, AI, and AI-assisted development workflows:
 
-| Skill                                                                  | Description                                             | Reference Files |
-| ---------------------------------------------------------------------- | ------------------------------------------------------- | --------------- |
-| [bun](skills/bun/skill.md)                                             | Bun runtime and toolkit                                 | 6               |
-| [nextjs](skills/nextjs/skill.md)                                       | Next.js React framework                                 | 8               |
-| [pinia](skills/pinia/skill.md)                                         | Vue state management                                    | 25              |
-| [react](skills/react/skill.md)                                         | React library                                           | 3               |
-| [vue](skills/vue/skill.md)                                             | Vue.js core                                             | 3               |
-| [vue-best-practices](skills/vue-best-practices/skill.md)               | Vue 3 + TypeScript best practices                       | 100+            |
-| [vue-router-best-practices](skills/vue-router-best-practices/skill.md) | Vue Router best practices                               | 7               |
-| [zustand](skills/zustand/skill.md)                                     | Zustand state management                                | 5               |
-| [unocss](skills/unocss/skill.md)                                       | UnoCSS atomic CSS engine                                | 3               |
-| [react-best-practices](skills/react-best-practices/skill.md)           | React best practices                                    | 60+             |
-| [belos-street](skills/belos-street/skill.md)                           | Belos Street coding conventions                         | 4               |
-| [frontend-design](skills/frontend-design/skill.md)                     | Frontend design principles and best practices           | 6               |
-| [ui-templates](skills/ui-templates/skill.md)                           | Collection of distinctive UI design templates           | 5               |
-| [ant-design-vue](skills/ant-design-vue/skill.md)                       | Ant Design Vue component library                        | 15              |
-| [golang-best-practices](skills/golang-best-practices/skill.md)         | Go best practices and patterns                          | 37              |
-| [langchain](skills/langchain/skill.md)                                 | LangChain framework for AI agents                       | 12              |
-| [rag](skills/rag/skill.md)                                             | General RAG methodology (9 modules, iKnow-based)        | 10              |
-| [vibe-flow](skills/vibe-flow/skill.md)                                 | Independent developer Vibe Coding full-process workflow | 14              |
-| [fastify-best-practices](skills/fastify-best-practices/SKILL.md)       | Fastify Node.js backend best practices                  | 19              |
-| [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md)         | NestJS architecture and best practices                  | 40              |
-| [react-native-skills](skills/react-native-skills/SKILL.md)             | React Native & Expo mobile development best practices   | 38              |
-| [grill-me](skills/grill-me/SKILL.md)                                   | Layered requirement clarification for vague requirements | 2               |
+| Skill                                                                  | Description                                                  | Docs        |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------ | ----------- |
+| [ant-design-vue](skills/ant-design-vue/skill.md)                       | Ant Design Vue component library                             | 17          |
+| [belos-street](skills/belos-street/skill.md)                           | Personal coding conventions, code review & project evaluation | 8           |
+| [bun](skills/bun/skill.md)                                             | Bun runtime and toolkit                                      | 6           |
+| [fastify-best-practices](skills/fastify-best-practices/SKILL.md)       | Fastify Node.js backend best practices                       | 19          |
+| [frontend-design](skills/frontend-design/skill.md)                     | Frontend design principles and best practices                | 6           |
+| [golang-best-practices](skills/golang-best-practices/skill.md)         | Go best practices and patterns                               | 37          |
+| [grill-me](skills/grill-me/SKILL.md)                                   | Layered requirement clarification for vague requirements     | 2           |
+| [langchain](skills/langchain/skill.md)                                 | LangChain framework for AI agents                            | 12          |
+| [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md)         | NestJS architecture and best practices                       | 42          |
+| [nextjs](skills/nextjs/skill.md)                                       | Next.js React framework                                      | 9           |
+| [pinia](skills/pinia/skill.md)                                         | Vue state management                                         | 33          |
+| [rag](skills/rag/skill.md)                                             | General RAG methodology (9 modules, based on iKnow ASE 2025) | 10          |
+| [react](skills/react/skill.md)                                         | React library                                                | 3           |
+| [react-best-practices](skills/react-best-practices/skill.md)           | React best practices                                         | 62          |
+| [react-native-skills](skills/react-native-skills/SKILL.md)             | React Native & Expo mobile development best practices        | 38          |
+| [superpowers](skills/superpowers/skill.md)                             | AI-assisted development workflows (collection of 14 sub-skills) | 14 sub-skills |
+| [ui-templates](skills/ui-templates/skill.md)                           | Collection of distinctive UI design templates                | 30          |
+| [unocss](skills/unocss/skill.md)                                       | UnoCSS atomic CSS engine                                     | 3           |
+| [vibe-flow](skills/vibe-flow/skill.md)                                 | Independent developer Vibe Coding full-process workflow      | 14          |
+| [vue](skills/vue/skill.md)                                             | Vue.js core                                                  | 3           |
+| [vue-best-practices](skills/vue-best-practices/skill.md)               | Vue 3 + TypeScript best practices                            | 180         |
+| [vue-router-best-practices](skills/vue-router-best-practices/skill.md) | Vue Router best practices                                    | 8           |
+| [zustand](skills/zustand/skill.md)                                     | Zustand state management                                     | 5           |
 
 ### Skill Categories
 
@@ -174,7 +174,7 @@ This collection contains skills for various modern web development tech stacks:
 - [pinia](skills/pinia/skill.md) - State management
 - [vue-best-practices](skills/vue-best-practices/skill.md) - Best practices
 - [vue-router-best-practices](skills/vue-router-best-practices/skill.md) - Router best practices
-- [vue-testing-best-practices](skills/vue-testing-best-practices/skill.md) - Testing best practices
+- [ant-design-vue](skills/ant-design-vue/skill.md) - Ant Design Vue component library
 
 **React Ecosystem**
 
@@ -187,42 +187,42 @@ This collection contains skills for various modern web development tech stacks:
 
 - [react-native-skills](skills/react-native-skills/SKILL.md) - React Native & Expo mobile development best practices
 
+**Backend Frameworks**
+
+- [fastify-best-practices](skills/fastify-best-practices/SKILL.md) - Fastify Node.js backend best practices
+- [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md) - NestJS architecture and best practices
+
+**Languages & Runtimes**
+
+- [golang-best-practices](skills/golang-best-practices/skill.md) - Go best practices and WebAssembly
+- [bun](skills/bun/skill.md) - Bun runtime
+
 **Tooling**
 
-- [bun](skills/bun/skill.md) - Bun runtime
 - [unocss](skills/unocss/skill.md) - Atomic CSS engine
 
 **Design & UI**
 
 - [frontend-design](skills/frontend-design/skill.md) - Frontend design principles and best practices
 - [ui-templates](skills/ui-templates/skill.md) - Collection of distinctive UI design templates
-- [ant-design-vue](skills/ant-design-vue/skill.md) - Ant Design Vue component library
 
-**Coding Conventions**
+**Coding Conventions & Review**
 
-- [belos-street](skills/belos-street/skill.md) - Belos Street coding conventions (includes LLM coding guidelines)
+- [belos-street](skills/belos-street/skill.md) - Personal coding conventions, including LLM coding guidelines, multi-dimensional code review, and project evaluation
 
 **AI & LLM**
 
 - [langchain](skills/langchain/skill.md) - LangChain framework for building AI agents
-- [rag](skills/rag/SKILL.md) - General RAG methodology (loading/ingestion/query/retrieval/rerank/generation/multi-turn/GraphRAG/evaluation, based on iKnow ASE 2025)
+- [rag](skills/rag/skill.md) - General RAG methodology (loading/ingestion/query/retrieval/rerank/generation/multi-turn/GraphRAG/evaluation, based on iKnow ASE 2025)
 
 **Workflow & Process**
 
 - [vibe-flow](skills/vibe-flow/skill.md) - Independent developer Vibe Coding full-process workflow
 - [grill-me](skills/grill-me/SKILL.md) - Layered requirement clarification for vague requirements
 
-**Languages & Runtimes**
-
-- [golang-best-practices](skills/golang-best-practices/skill.md) - Go best practices and WebAssembly
-
-**Backend Frameworks**
-
-- [fastify-best-practices](skills/fastify-best-practices/SKILL.md) - Fastify Node.js backend best practices
-- [nestjs-best-practices](skills/nestjs-best-practices/SKILL.md) - NestJS architecture and best practices
-
 **Superpowers (AI-Assisted Development Workflows)**
 
+- [superpowers](skills/superpowers/skill.md) - Collection overview
 - [brainstorming](skills/superpowers/brainstorming/SKILL.md) - Design exploration before implementation
 - [writing-plans](skills/superpowers/writing-plans/SKILL.md) - Implementation plan creation
 - [executing-plans](skills/superpowers/executing-plans/SKILL.md) - Execute plans with review checkpoints
@@ -246,7 +246,7 @@ Each skill follows this structure:
 skills/
 ├── <skill-name>/
 │   ├── skill.md              # Main skill file with metadata
-│   └── reference/            # Reference documents
+│   └── reference/            # Reference documents (naming varies: reference/ | references/ | rules/)
 │       ├── basics.md
 │       ├── advanced.md
 │       └── ...
@@ -256,7 +256,7 @@ skills/
 
 The `skill.md` file contains metadata and documentation:
 
-````yaml
+````markdown
 ---
 name: skill-name
 title: Skill Title
@@ -277,6 +277,7 @@ Detailed documentation and best practices...
 
 ```typescript
 // Example code
+```
 ````
 
 ## Project Structure
@@ -298,17 +299,13 @@ skill-kit/
 │       └── index.ts        # Generate agents.md
 ├── scripts/
 │   └── publish.ts          # Publish script
-├── skills/                 # Built-in skills
-│   ├── superpowers/        # Integrated from obra/superpowers
-│   │   ├── brainstorming/
-│   │   ├── writing-plans/
-│   │   ├── executing-plans/
-│   │   └── ... (14 skills total)
+├── skills/                 # Built-in skills (23 top-level skills)
+│   ├── superpowers/        # Integrated from obra/superpowers (14 sub-skills)
 │   ├── bun/
 │   ├── nextjs/
 │   ├── pinia/
 │   ├── react/
-│   └── ... (20+ other skills)
+│   └── ... (22 other skills)
 ├── index.ts                # Entry point
 ├── package.json
 └── README.md
@@ -327,10 +324,9 @@ bun run ./index.ts add
 bun run ./index.ts info <skill-name>
 ```
 
-**Note:** These skills are stored in a subdirectory and are not automatically scanned by the `skill-kit` CLI. They are intended for direct reference and integration into your AI agent's workflow.
+**Note:** The CLI scans top-level directories under `skills/` and reads each lowercase `skill.md`. The 14 sub-skills inside `superpowers/` are managed as part of the `superpowers` collection and are not listed individually by the CLI.
 
 ## Acknowledgments
 
 - Inspired by [antfu/skills](https://github.com/antfu/skills)
 - Superpowers skills integrated from [obra/superpowers](https://github.com/obra/superpowers)
-
