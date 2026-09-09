@@ -1,3 +1,8 @@
+---
+name: doc-writing-guidelines
+description: 技术教学文档编写规范：六维框架（格式/代码可运行/面试导向/知识覆盖/渐进/对比）、可溯源原则、P0/P1/P2 写作自查。写教学文档/教程时调用。
+---
+
 # Documentation Writing Guidelines
 
 个人编码习惯 - 技术教学文档编写规范
@@ -29,8 +34,8 @@
 
 严禁**未标注的「伪可运行」代码**——看起来能跑、实际缺依赖与上下文，比诚实标注的伪代码更有害。
 
-```markdown
 ✅ 正面示例（简单自包含 → 完整可运行）：
+
 ```js
 const stage = new Konva.Stage({ container: 'root', width: 800, height: 600 });
 const layer = new Konva.Layer();
@@ -40,6 +45,7 @@ layer.draw();
 ```
 
 ✅ 正面示例（复杂强依赖 → 诚实标注的高质量伪代码）：
+
 ```js
 // 伪代码：消息队列消费流程，省略 Redis 连接与 SDK 初始化
 async function consume() {
