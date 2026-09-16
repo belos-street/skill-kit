@@ -62,7 +62,7 @@ Available skills:
   vue-best-practices - Vue 3 + TypeScript best practices
   ...
 
-Total: 23 skills
+Total: 24 skills
 ```
 
 ### Add Skills (Interactive)
@@ -138,12 +138,13 @@ References: 8 files
 
 ### Built-in Skills
 
-This collection contains 23 skills covering web frontend/backend, mobile, AI, and AI-assisted development workflows:
+This collection contains 24 skills covering web frontend/backend, mobile, AI, and AI-assisted development workflows:
 
 | Skill                                                                  | Description                                                  | Docs        |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------ | ----------- |
 | [ant-design-vue](skills/ant-design-vue/skill.md)                       | Ant Design Vue component library                             | 17          |
-| [belos-street](skills/belos-street/skill.md)                           | Personal coding conventions, code review & project evaluation | 8           |
+| [ai-collab-system-bootstrap](skills/ai-collab-system-bootstrap/skill.md) | Bootstrap AI collaboration system: AGENTS.md + .agents rules/workflows + doc layers + machine-gated verification | 4           |
+| [belos-street](skills/belos-street/skill.md)                           | Personal coding conventions, code review & project evaluation | 12          |
 | [bun](skills/bun/skill.md)                                             | Bun runtime and toolkit                                      | 6           |
 | [fastify-best-practices](skills/fastify-best-practices/SKILL.md)       | Fastify Node.js backend best practices                       | 19          |
 | [frontend-design](skills/frontend-design/skill.md)                     | Frontend design principles and best practices                | 6           |
@@ -217,6 +218,7 @@ This collection contains 23 skills covering web frontend/backend, mobile, AI, an
 
 **Workflow & Process**
 
+- [ai-collab-system-bootstrap](skills/ai-collab-system-bootstrap/skill.md) - Bootstrap AI collaboration system: AGENTS.md + .agents rules/workflows + doc layers + machine-gated verification
 - [vibe-flow](skills/vibe-flow/skill.md) - Independent developer Vibe Coding full-process workflow
 - [grill-me](skills/grill-me/SKILL.md) - Layered requirement clarification for vague requirements
 
@@ -305,7 +307,7 @@ skill-kit/
 │   ├── nextjs/
 │   ├── pinia/
 │   ├── react/
-│   └── ... (22 other skills)
+│   └── ... (23 other skills)
 ├── index.ts                # Entry point
 ├── package.json
 └── README.md
