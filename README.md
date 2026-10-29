@@ -332,3 +332,4 @@ bun run ./index.ts info <skill-name>
 
 - Inspired by [antfu/skills](https://github.com/antfu/skills)
 - Superpowers skills integrated from [obra/superpowers](https://github.com/obra/superpowers)
+- Third-party skill recommendations: [awesome-skills/](awesome-skills/README.md)
